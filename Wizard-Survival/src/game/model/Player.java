@@ -26,8 +26,8 @@ public class Player {
         ImageIcon src = new ImageIcon("res\\char.png");
         image = src.getImage();
 
-        height = 84*2;
-        width = 62*2;
+        height = (int)(84*1.5);
+        width = (int) (62*1.5);
     }
 
     public void update(){

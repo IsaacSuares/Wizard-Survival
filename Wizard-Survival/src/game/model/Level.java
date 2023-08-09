@@ -3,6 +3,7 @@ package game.model;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Level extends JPanel implements ActionListener {
@@ -10,6 +11,7 @@ public class Level extends JPanel implements ActionListener {
     private Image background;
     private Player player;
     private Timer timer;
+    private List<Enemy> enemy;
 
     public Level(){
         setFocusable(true);
@@ -25,6 +27,18 @@ public class Level extends JPanel implements ActionListener {
 
         timer = new Timer(5,this);
         timer.start();
+        startEnemies();
+    }
+
+    public void startEnemies(){
+        int coord[] = new int[40];//numero de inimigos
+        enemy = new ArrayList<Enemy>();
+
+        for(int i = 0; i < coord.length; i++){
+            int x = (int)(Math.random()*-1650+1600);
+            int y = (int)(Math.random()*-4500+10);
+            enemy.add(new Enemy(x,y));
+        }
     }
 
     public void paint(Graphics g){
@@ -37,6 +51,12 @@ public class Level extends JPanel implements ActionListener {
             Fire m = fire.get(i);
             m.load();
             graphics2D.drawImage(m.getImage(), m.getX(), m.getY(), m.getWidth(), m.getHeight(),this);
+        }
+
+        for (int i = 0; i < enemy.size(); i++){
+            Enemy in = enemy.get(i);
+            in.load();
+            graphics2D.drawImage(in.getImage(), in.getX(), in.getY(), in.getWidth(), in.getHeight(), this);
         }
 
         g.dispose();
@@ -52,8 +72,19 @@ public class Level extends JPanel implements ActionListener {
             else fire.remove(i);
         }
 
+        for (int i = 0; i < enemy.size(); i++){
+            Enemy in = enemy.get(i);
+            if (in.isVisible()){
+                in.update();
+            }else {
+                enemy.remove(i);
+            }
+        }
+
         repaint();
     }
+
+
 
     private class keyboardAdapter extends KeyAdapter{
 
