@@ -30,6 +30,9 @@ public class Enemy {
         this.y+=SPEED;
     }
 
+    public Rectangle getBounds(){
+        return new Rectangle(x,y,width,height);
+    }
 
     public boolean isVisible() {
         return isVisible;

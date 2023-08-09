@@ -1,5 +1,7 @@
 package game.model;
 
+import game.sound.SoundEffects;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -15,8 +17,8 @@ public class Fire {
     public Fire(int x, int y){
         this.x = x;
         this.y = y;
-
         isVisible = true;
+        fireSound();
     }
 
     public void load(){
@@ -31,9 +33,17 @@ public class Fire {
         this.y+=-SPEED;
     }
 
+    public Rectangle getBounds(){
+        return new Rectangle(x,y,width,height);
+    }
 
     public boolean isVisible() {
         return isVisible;
+    }
+
+    public void fireSound(){
+        SoundEffects se = new SoundEffects();
+        se.playFireSound();
     }
 
     public void setVisible(boolean visible) {

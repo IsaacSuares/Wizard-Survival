@@ -1,7 +1,7 @@
 package game.model;
 
 import javax.swing.*;
-import java.awt.Image;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +37,10 @@ public class Player {
 
     public void basicFire(){
         this.fire.add(new Fire(x+(width/7), y));//posição de onde sai o tiro, em relação ao player
+    }
+
+    public Rectangle getBounds(){
+        return new Rectangle(x,y,width,height);
     }
 
     public void keyPressed(KeyEvent key){
