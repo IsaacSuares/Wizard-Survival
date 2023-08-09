@@ -1,13 +1,17 @@
 package game;
 
+import game.model.Level;
+
 import javax.swing.*;
 
 public class Container extends JFrame {
 
     Container(){
+        add(new Level());
         setTitle("Wizard Survival");
-        setResizable(false);
+        this.setResizable(false);
         setSize(1920,1080);
+        setLocationRelativeTo(null);
         setDefaultCloseOperation(Container.EXIT_ON_CLOSE);
         setVisible(true);
     }
