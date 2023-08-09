@@ -13,12 +13,14 @@ public class Player {
     private Image image;
     private int height, width;
     private List<Fire> fire;
+    private boolean isVisible;
 
     public Player(){
         this.x = 100;
         this.y = 100;
         //define onde o player nasce
 
+        isVisible = true;
         fire = new ArrayList<Fire>();
     }
 
@@ -40,7 +42,7 @@ public class Player {
     }
 
     public Rectangle getBounds(){
-        return new Rectangle(x,y,width,height);
+        return new Rectangle(x,y,width-40,height-50);
     }
 
     public void keyPressed(KeyEvent key){
@@ -109,5 +111,13 @@ public class Player {
 
     public List<Fire> getFire() {
         return fire;
+    }
+
+    public boolean isVisible() {
+        return isVisible;
+    }
+
+    public void setVisible(boolean visible) {
+        isVisible = visible;
     }
 }

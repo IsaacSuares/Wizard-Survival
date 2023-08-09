@@ -1,4 +1,4 @@
-package game;
+package gamef;
 
 import game.model.Level;
 
