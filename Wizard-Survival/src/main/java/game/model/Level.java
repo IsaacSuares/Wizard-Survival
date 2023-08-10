@@ -11,7 +11,7 @@ public class Level extends JPanel implements ActionListener {
     private Image background;
     private Player player;
     private Timer timer;
-    private List<game.model.Enemy> enemy;
+    private List<main.java.game.model.Enemy> enemy;
     private boolean inGame;
 
 
@@ -35,12 +35,12 @@ public class Level extends JPanel implements ActionListener {
 
     public void startEnemies(){
         int coord[] = new int[40];//numero de inimigos
-        enemy = new ArrayList<game.model.Enemy>();
+        enemy = new ArrayList<main.java.game.model.Enemy>();
 
         for(int i = 0; i < coord.length; i++){
             int x = (int)(Math.random()*-1650+1600);
             int y = (int)(Math.random()*-4500+10);
-            enemy.add(new game.model.Enemy(x,y));
+            enemy.add(new main.java.game.model.Enemy(x,y));
         }
     }
 
@@ -58,7 +58,7 @@ public class Level extends JPanel implements ActionListener {
             }
 
             for (int i = 0; i < enemy.size(); i++){
-                game.model.Enemy in = enemy.get(i);
+                main.java.game.model.Enemy in = enemy.get(i);
                 in.load();
                 graphics2D.drawImage(in.getImage(), in.getX(), in.getY(), in.getWidth(), in.getHeight(), this);
             }
@@ -81,7 +81,7 @@ public class Level extends JPanel implements ActionListener {
         }
 
         for (int i = 0; i < enemy.size(); i++){
-            game.model.Enemy in = enemy.get(i);
+            main.java.game.model.Enemy in = enemy.get(i);
             if (in.isVisible()){
                 in.update();
             }else {
@@ -98,7 +98,7 @@ public class Level extends JPanel implements ActionListener {
         Rectangle fireShape;
 
         for (int i = 0; i < enemy.size(); i++) {
-            game.model.Enemy tempEnemy = enemy.get(i);
+            main.java.game.model.Enemy tempEnemy = enemy.get(i);
             enemyShape = tempEnemy.getBounds();
             if(playerShape.intersects(enemyShape)){
                 player.setVisible(false);
@@ -112,7 +112,7 @@ public class Level extends JPanel implements ActionListener {
             Fire tempFire = fire.get(i);
             fireShape = tempFire.getBounds();
             for (int j = 0; j < enemy.size(); j++) {
-                game.model.Enemy tempEnemy = enemy.get(j);
+                main.java.game.model.Enemy tempEnemy = enemy.get(j);
                 enemyShape = tempEnemy.getBounds();
                 if(fireShape.intersects(enemyShape)){
                     tempEnemy.setVisible(false);
