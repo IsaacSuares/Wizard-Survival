@@ -63,7 +63,7 @@ public class Level extends JPanel implements ActionListener {
                 graphics2D.drawImage(in.getImage(), in.getX(), in.getY(), in.getWidth(), in.getHeight(), this);
             }
         }else {
-            ImageIcon endGame = new ImageIcon("res\\game-over.png");
+            ImageIcon endGame = new ImageIcon("res\\go.png");
             graphics2D.drawImage(endGame.getImage(),0,0,null);
         }
 
