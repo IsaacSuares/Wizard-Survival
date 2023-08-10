@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Wizard-Survival/src/main/java/game/Container.java
 package main.java.game;
+=======
+package game;
+>>>>>>> temp:Wizard-Survival/src/game/Container.java
 
 import main.java.game.model.Level;
 
