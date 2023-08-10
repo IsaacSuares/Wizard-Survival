@@ -1,6 +1,6 @@
-package game.model;
+package main.java.game.model;
 
-import game.sound.SoundEffects;
+import main.java.game.sound.SoundEffects;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-package game.model;
+package main.java.game.model;
 
 import javax.swing.*;
 import java.awt.*;
