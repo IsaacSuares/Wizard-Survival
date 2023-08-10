@@ -28,7 +28,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>main.java.game.Container</mainClass>
+                    <mainClass>Container</mainClass>
                 </configuration>
             </plugin>
         </plugins>

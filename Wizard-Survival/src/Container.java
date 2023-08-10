@@ -1,7 +1,4 @@
-
-package main.java.game;
-
-import main.java.game.model.Level;
+import model.Level;
 
 import javax.swing.*;
 
