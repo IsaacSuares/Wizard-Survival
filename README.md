@@ -36,6 +36,9 @@ Para quaisquer perguntas, sugestões ou problemas relacionados ao jogo, sinta-se
 ## Capturas de Tela :camera:
 Inclua algumas capturas de tela do jogo para dar aos jogadores uma prévia visual do que esperar. Isso ajudará a atrair mais interesse para o seu jogo!
 
-[Aqui estão as capturas de tela do seu jogo]
+![p1](https://github.com/IsaacSuares/Wizard-Survival/assets/112450363/3bea81e9-deea-488c-9d86-9609a3bd1380)
+![p2](https://github.com/IsaacSuares/Wizard-Survival/assets/112450363/5530c9e8-12c5-453c-b195-d90b29d46fa1)
+
+
 
 Aproveite o desenvolvimento contínuo do Wizard Survival e divirta-se criando um emocionante mundo mágico para os jogadores explorarem! :sparkles:
