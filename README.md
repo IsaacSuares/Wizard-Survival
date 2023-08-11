@@ -24,8 +24,8 @@ Certifique-se de ter o Java 17 instalado em seu sistema antes de executar o jogo
 
 ## Créditos :star2:
 - Desenvolvido por Isaac Suares.
-- Efeito sonoro obtido em [link_para_efeito_sonoro](link_para_efeito_sonoro)
-- Background gratuito por [rawpixel.com] via [link_para_background](https://www.freepik.com/free-photo/brown-clay-textured-background-earth-tone-diy-creative-art-minimal-style_18998470.htm)
+- Efeito sonoro obtido em [Freesound](https://freesound.org/people/LiamG_SFX/sounds/334234/)
+- Background gratuito por [Rawpixel.com](https://www.freepik.com/free-photo/brown-clay-textured-background-earth-tone-diy-creative-art-minimal-style_18998470.htm)
 
 ## Licença :scroll:
 Este jogo é distribuído sob a licença livre. Você pode modificar e distribuir o código-fonte de acordo com suas necessidades.
