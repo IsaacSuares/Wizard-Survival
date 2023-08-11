@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87a23034-0d2f-4619-bc39-ebd72a778c6e" name="Changes" comment="" />
+    <list default="true" id="87a23034-0d2f-4619-bc39-ebd72a778c6e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Wizard-Survival/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wizard-Survival/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wizard-Survival/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/Wizard-Survival.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/out/production/Wizard-Survival/Container.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wizard-Survival/out/production/Wizard-Survival/Container.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/src/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wizard-Survival/src/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/target/classes/game/model/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/target/classes/main/java/game/Container.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/target/classes/main/java/game/model/Fire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/target/classes/main/java/game/model/Level$keyboardAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/target/classes/main/java/game/model/Level.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/target/classes/main/java/game/model/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wizard-Survival/target/classes/main/java/game/sound/SoundEffects.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +34,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
