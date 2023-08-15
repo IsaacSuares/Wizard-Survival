@@ -5,9 +5,12 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Player {
 
+    private long lastFireTime = 0;
+    private long fireCooldown = 500; // Tempo mínimo entre disparos em milissegundos
     private int x,y;
     private int dx, dy;
     private Image image;
@@ -25,7 +28,7 @@ public class Player {
     }
 
     public void load(){
-        ImageIcon src = new ImageIcon("res\\char.png");
+        ImageIcon src = new ImageIcon(Objects.requireNonNull(getClass().getClassLoader().getResource("char.png")));
         image = src.getImage();
 
         height = (int)(84*1.5);
@@ -49,7 +52,12 @@ public class Player {
         int code = key.getKeyCode();
 
         if(code == KeyEvent.VK_F){
-            basicFire();
+            long currentTime = System.currentTimeMillis();
+
+            if (currentTime - lastFireTime >= fireCooldown) {
+                basicFire();
+                lastFireTime = currentTime;
+            }
         }
 
         if(code == KeyEvent.VK_UP){

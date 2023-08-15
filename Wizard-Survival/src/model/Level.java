@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Level extends JPanel implements ActionListener {
 
@@ -19,7 +20,7 @@ public class Level extends JPanel implements ActionListener {
         setFocusable(true);
         setDoubleBuffered(true);
 
-        ImageIcon src = new ImageIcon("res\\ground.png");
+        ImageIcon src = new ImageIcon(Objects.requireNonNull(getClass().getClassLoader().getResource("ground.png")));
         background = src.getImage();
 
         player = new Player();
@@ -115,8 +116,10 @@ public class Level extends JPanel implements ActionListener {
                 model.Enemy tempEnemy = enemy.get(j);
                 enemyShape = tempEnemy.getBounds();
                 if(fireShape.intersects(enemyShape)){
-                    tempEnemy.setVisible(false);
+
                     tempFire.setVisible(false);
+                    tempEnemy.setHp(tempEnemy.getHp()-1);
+                    if (tempEnemy.getHp()<= 0)tempEnemy.setVisible(false);
 
                 }
                 

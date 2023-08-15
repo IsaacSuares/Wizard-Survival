@@ -2,12 +2,14 @@ package model;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Objects;
 
 public class Enemy {
     private Image image;
     private int x,y;
     private int height, width;
     private boolean isVisible;
+    private int hp = 2;
 
     private static final int SPEED = 1;
 
@@ -19,7 +21,7 @@ public class Enemy {
     }
 
     public void load(){
-        ImageIcon src = new ImageIcon("res\\enemy.png");
+        ImageIcon src = new ImageIcon(Objects.requireNonNull(getClass().getClassLoader().getResource("enemy.png")));
         image = src.getImage();
 
         this.width = 17*5;
@@ -68,5 +70,12 @@ public class Enemy {
 
     public int getWidth() {
         return width;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 }

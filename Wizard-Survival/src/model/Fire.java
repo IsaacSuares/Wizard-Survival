@@ -4,6 +4,7 @@ import sound.SoundEffects;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Objects;
 
 public class Fire {
     private Image image;
@@ -22,7 +23,7 @@ public class Fire {
     }
 
     public void load(){
-        ImageIcon src = new ImageIcon("res\\basic-fire.png");
+        ImageIcon src = new ImageIcon(Objects.requireNonNull(getClass().getClassLoader().getResource("basic-fire.png")));
         image = src.getImage();
 
         this.width = 17*4;
